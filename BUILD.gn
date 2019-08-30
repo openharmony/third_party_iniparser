@@ -1,0 +1,14 @@
+# Copyright (C) 2019. Huawei Technologies Co., Ltd. All rights reserved.
+
+import("//build/zidane.gni")
+
+zidane_shared_library("iniparser") {
+    sources = [
+        "src/iniparser.c",
+        "src/dictionary.c",
+    ]
+    include_dirs = [
+        "src",
+    ]
+    subsystem_name = "communication"
+}
