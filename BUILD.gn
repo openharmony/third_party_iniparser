@@ -1,8 +1,8 @@
 # Copyright (C) 2019. Huawei Technologies Co., Ltd. All rights reserved.
 
-import("//build/harmonyos.gni")
+import("//build/lite/config/component/zlite_component.gni")
 
-harmonyos_shared_library("iniparser") {
+shared_library("iniparser") {
     sources = [
         "src/iniparser.c",
         "src/dictionary.c",
@@ -10,5 +10,5 @@ harmonyos_shared_library("iniparser") {
     include_dirs = [
         "src",
     ]
-    subsystem_name = "communication"
 }
+
