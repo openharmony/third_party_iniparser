@@ -7,8 +7,9 @@ shared_library("iniparser") {
         "src/iniparser.c",
         "src/dictionary.c",
     ]
-    include_dirs = [
-        "src",
-    ]
+    public_configs = [":iniparser_external_library_config"]
+}
+config("iniparser_external_library_config") {
+    include_dirs = ["//third_party/iniparser/src"]
 }
 
