@@ -1,6 +1,6 @@
 # Copyright (C) 2019. Huawei Technologies Co., Ltd. All rights reserved.
 
-import("//build/lite/config/component/zlite_component.gni")
+import("//build/lite/config/component/lite_component.gni")
 
 shared_library("iniparser") {
     sources = [
