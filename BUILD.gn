@@ -1,6 +1,10 @@
 # Copyright (C) 2019. Huawei Technologies Co., Ltd. All rights reserved.
 
-import("//build/lite/config/component/lite_component.gni")
+if (defined(ohos_lite)) {
+  import("//build/lite/config/component/lite_component.gni")
+} else {
+  import("//build/ohos.gni")
+}
 
 shared_library("iniparser") {
     sources = [
