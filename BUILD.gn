@@ -7,13 +7,12 @@ if (defined(ohos_lite)) {
 }
 
 shared_library("iniparser") {
-    sources = [
-        "src/iniparser.c",
-        "src/dictionary.c",
-    ]
-    public_configs = [":iniparser_external_library_config"]
+  sources = [
+    "src/dictionary.c",
+    "src/iniparser.c",
+  ]
+  public_configs = [ ":iniparser_external_library_config" ]
 }
 config("iniparser_external_library_config") {
-    include_dirs = ["//third_party/iniparser/src"]
+  include_dirs = [ "//third_party/iniparser/src" ]
 }
-
